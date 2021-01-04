@@ -1,3 +1,6 @@
 const http = new easyHTTP;
 
-http.get('https://jsonplaceholder.typicode.com/posts');
+const posts = http.get('https://jsonplaceholder.typicode.com/posts', function(response){
+    console.log(response);
+});
+console.log(posts);

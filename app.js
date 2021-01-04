@@ -24,7 +24,15 @@ const data = {
     body: 'This is a custom post'
 };
 
-http.post('https://jsonplaceholder.typicode.com/posts', data, function(error, post){
+// http.post('https://jsonplaceholder.typicode.com/posts', data, function(error, post){
+//     if(error) {
+//         console.log(error);
+//     } else {
+//         console.log(post);
+//     }
+// });
+
+http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(error, post) {
     if(error) {
         console.log(error);
     } else {

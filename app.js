@@ -61,8 +61,8 @@ const data = {
 }
 
 const http = new EasyHTTP;
-http.post('https://jsonplaceholder.typicode.com/users', data)
-    .then(data => console.log (data))
-    .catch(err => console.log(err));
+// http.post('https://jsonplaceholder.typicode.com/users', data)
+//     .then(data => console.log (data))
+//     .catch(err => console.log(err));
 
 

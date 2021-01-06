@@ -49,10 +49,20 @@
 //     }
 // });
 
+// const http = new EasyHTTP;
+// http.get('https://jsonplaceholder.typicode.com/users')
+//     .then(data => console.log (data))
+//     .catch(err => console.log(err));
+
+const data = {
+    name: 'Jane Doe',
+    username: 'janedoe',
+    email: 'jdoe@gmail.com'
+}
+
 const http = new EasyHTTP;
-http.get('https://jsonplaceholder.typicode.com/users')
+http.post('https://jsonplaceholder.typicode.com/users', data)
     .then(data => console.log (data))
     .catch(err => console.log(err));
-
 
 
